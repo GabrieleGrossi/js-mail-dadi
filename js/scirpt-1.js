@@ -5,13 +5,28 @@
 // Altrimenti no (generare solo un messaggio di accesso)
 
 
-let mail = prompt('Inserire la propria mail');
+//inserire la mail
+const mail = prompt('Inserire la propria mail');
 console.log(mail)
 
+
+//mail consentite per l'accesso
 const listMail = ['ginetto@gmail.com','gina@gmail.com','ginetta@gmail.com']
 
-if (mail.value != listMail.value) {
-    console.log('Benvenuto ' + mail +' , registrati al sito per accedere')
-} else if(mail.value === listMail.value); {
-    console.log('Ciao '+ mail + ' puoi entrare nel sito')
+//condizioni di accesso
+for(let i = 0; i < listMail.length; i++) {
+
+    
+    if ( mail === listMail[i]) {
+        console.log('Accesso consentito. Benvenuto nel nostro sito');
+    } else (mail != listMail[i]); {
+        console.log('Registrati al sito e accedi');
 }
+}
+
+
+
+
+
+
+
