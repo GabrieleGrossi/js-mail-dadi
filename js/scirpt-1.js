@@ -13,17 +13,21 @@ console.log(mail)
 //mail consentite per l'accesso
 const listMail = ['ginetto@gmail.com','gina@gmail.com','ginetta@gmail.com']
 
+let mailGiusta;
 
+mailGiusta= false;
 
 //condizioni di accesso
 for(let i = 0; i < listMail.length; i++) {
-    mailGiusta= false
-    if (i === listMail) {
+    if (mail === listMail[i]) {
         mailGiusta = true
-        console.log('Benvenuto')
-    } else if (i !== listMail) {
-        console.log('Email errata. Riprova o registrati');
+        
     }
+}
+if (mailGiusta){
+    console.log('Benvenuto nel nostro sito')
+} else {
+    console.log('Errore nella compilazione della mail. Prego riprovare o registrarsi al sito')
 }
 
 
