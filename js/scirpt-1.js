@@ -10,8 +10,8 @@ console.log(mail)
 
 const listMail = ['ginetto@gmail.com','gina@gmail.com','ginetta@gmail.com']
 
-if (mail === listMail){
-    console.log('Ciao '+ mail + ' puoi entrare nel sito')
-} else (mail !=== listMail); {
+if (mail.value != listMail.value) {
     console.log('Benvenuto ' + mail +' , registrati al sito per accedere')
+} else if(mail.value === listMail.value); {
+    console.log('Ciao '+ mail + ' puoi entrare nel sito')
 }
