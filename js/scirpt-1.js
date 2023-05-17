@@ -13,15 +13,17 @@ console.log(mail)
 //mail consentite per l'accesso
 const listMail = ['ginetto@gmail.com','gina@gmail.com','ginetta@gmail.com']
 
+
+
 //condizioni di accesso
 for(let i = 0; i < listMail.length; i++) {
-
-    
-    if (mail === listMail[i]) {
-        console.log('Accesso consentito. Benvenuto nel nostro sito');
-    } else (mail !== listMail[i]) {
+    mailGiusta= false
+    if (i === listMail) {
+        mailGiusta = true
+        console.log('Benvenuto')
+    } else if (i !== listMail) {
         console.log('Email errata. Riprova o registrati');
-}
+    }
 }
 
 
