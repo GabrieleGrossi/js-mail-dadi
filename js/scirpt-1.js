@@ -19,8 +19,8 @@ for(let i = 0; i < listMail.length; i++) {
     
     if (mail === listMail[i]) {
         console.log('Accesso consentito. Benvenuto nel nostro sito');
-    } else (mail != listMail[i]); {
-        console.log('Registrati al sito e accedi');
+    } else (mail !== listMail[i]) {
+        console.log('Email errata. Riprova o registrati');
 }
 }
 
