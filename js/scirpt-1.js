@@ -13,9 +13,7 @@ console.log(mail)
 //mail consentite per l'accesso
 const listMail = ['ginetto@gmail.com','gina@gmail.com','ginetta@gmail.com']
 
-let mailGiusta;
-
-mailGiusta= false;
+let mailGiusta = false;
 
 //condizioni di accesso
 for(let i = 0; i < listMail.length; i++) {
